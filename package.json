@@ -1,0 +1,28 @@
+{
+  "name": "teste-simulador",
+  "version": "1.0.0",
+  "description": "Teste para Dbserver usando Cypress para testar o site de investimentos",
+  "keywords": [
+    "cypress",
+    "testing"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test:all": "cypress run --spec \"**/*.features\"",
+    "cy:run": "cypress run --record --key 043294ac-05eb-42c0-874f-3e8166f5a1a6",
+    "test:chrome": "cypress run --browser chrome --no-exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucasstd/teste-simulador.git"
+  },
+  "author": "Lucas Staudt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucasstd/teste-simulador/issues"
+  },
+  "homepage": "https://github.com/lucasstd/teste-simulador#readme",
+  "devDependencies": {
+    "cypress": "4.1.0"
+  }
+}
