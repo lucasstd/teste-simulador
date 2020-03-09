@@ -1,23 +1,20 @@
-import LoginElements from '../elements/SimulationElements'
+import elements from '../elements/SimulationElements'
 
 class SimulationPage {
     // Acessa o site que será testado
     acessarSite() { cy.visit("/") };
 
-    visualizarErroValorAplicar() {
-        cy.get(loginElements['inputQuantiaParaAplicar'])
-            .should('contain', 'Valor mínimo de 20.00');
+    inputQuantiaParaAplicar() {
+        return cy.get(elements['inputQuantiaParaAplicar'])
     }
 
-    visualizarErroValorPoupado() {
-        cy.get(loginElements['inputQuantiaPoupada'])
-            .should('contain', 'Valor mínimo de 20.00');
+    inputQuantiaPoupada() {
+        return cy.get(elements['inputQuantiaPoupada'])
     }
 
-    escolherTempo() {
-        cy.xpath(loginElements['tipoTempo'])
+    radioTempo() {
+        return cy.xpath(elements['tipoTempo'])
     }
-
 }
 
 export default SimulationPage
