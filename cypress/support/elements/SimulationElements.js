@@ -1,11 +1,17 @@
 const elements = {
-    'botaoParaVoce': 'input[value="paraVoce"]',
-    'botaoParaEmpresa': 'input[value="paraEmpresa"]',
-    'quantoTempo': '#tempo',
+    'btnParaVoce': 'input[value="paraVoce"]',
+    'btnParaEmpresa': 'input[value="paraEmpresa"]',
     'btnTempo': '.btSelect',
+    
     'btnSimular': '.simular > .btn',
     'refazerSimulacao': '.blocoResultadoSimulacao > .btn',
-    'tableComDados': '.maisOpcoes',
+    'tabelaComDados': '.blocoResultadoSimulacao',
+    
+    'quantoTempo': '#tempo',
+    'errorTempoMsg': '#tempo-error',
+    'errorValorInvestirMsg':'#valorInvestir-error',
+    'errorValorAplicarMsg': '#valorAplicar-error',
+
     'inputQuantiaPoupada': '#valorInvestir',
     'inputQuantiaParaAplicar': '#valorAplicar'
 }
