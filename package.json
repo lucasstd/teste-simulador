@@ -24,5 +24,8 @@
   "homepage": "https://github.com/lucasstd/teste-simulador#readme",
   "devDependencies": {
     "cypress": "4.1.0"
+  },
+  "dependencies": {
+    "jsonschema": "1.2.5"
   }
 }
